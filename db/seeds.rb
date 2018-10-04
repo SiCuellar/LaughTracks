@@ -1,6 +1,10 @@
-require_relative '../app/models/comedian.rb'
+# Comedian.destroy_all
 
-Comedian.destroy_all
+require 'database_cleaner'
+DatabaseCleaner.strategy = :truncation
+DatabaseCleaner.clean
+require_relative '../app/models/comedian'
+require_relative '../app/models/special'
 
 
 Comedian.create(name: 'Jim Carrey', age: 56, city: 'Newmarket, Canada')
