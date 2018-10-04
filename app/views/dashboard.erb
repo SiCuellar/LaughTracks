@@ -2,9 +2,13 @@
 <h1> Welcome to Comedian Tracker </h1>
 
 
-    <ul>
+<ul>
+  <% @comedians.each do |comedian| %>
+      <h3><%= comedian.name if comedian.name %></h3>
+      <li> Age: <%=comedian.age %></li>
+      <li>City: <%= comedian.city %></li>
+      <li>ID: <%= comedian.id %></li>
+      <br/>
 
-        <% @comedians.each do |comedian| %>
-            <li><%= comedian.name %></li>
-        <% end %>
-    </ul>
+  <% end %>
+</ul>

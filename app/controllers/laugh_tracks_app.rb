@@ -10,7 +10,7 @@ class LaughTracksApp < Sinatra::Base
   #   erb :dashboard
   # end
 
-  get '/' do
+  get '/comedians' do
     @comedians = Comedian.all
     erb :dashboard
   end

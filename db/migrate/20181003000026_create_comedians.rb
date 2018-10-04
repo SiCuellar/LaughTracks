@@ -9,3 +9,4 @@ class CreateComedians < ActiveRecord::Migration[5.2]
     end
   end
 end
+a
