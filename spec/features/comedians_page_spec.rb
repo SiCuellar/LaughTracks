@@ -37,17 +37,13 @@ RSpec.describe 'comedian page' do
         spec_lou_2 = Special.create(name: 'and', length: 201, comedian_id: 3)
         spec_lou_3 = Special.create(name: 'morty', length: 203, comedian_id: 3)
 
-
         visit('/comedians')
-        
+
         comedian_1.specials.each do |special|
           expect(page).to have_content(special.name)
           expect(page).to have_content(special.length)
         end
-
-
       end
     end
   end
-
 end

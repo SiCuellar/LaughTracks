@@ -12,6 +12,7 @@ class LaughTracksApp < Sinatra::Base
 
   get '/comedians' do
     @comedians = Comedian.all
-    erb :dashboard
+    # @specials = Special.all
+    erb :comedian
   end
 end
