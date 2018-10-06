@@ -53,19 +53,19 @@ Special.create(name: 'special 2', length: 301, comedian_id: 9)
 Special.create(name: 'special 3', length: 307, comedian_id: 9)
 
 Comedian.create(name: 'Amy Schumer', age: 37, city: 'Brooklyn, New York')
-Special.create(name: 'special 1', length: 204, comedian_id: 1)
-Special.create(name: 'special 2', length: 307, comedian_id: 1)
-Special.create(name: 'special 3', length: 105, comedian_id: 1)
+Special.create(name: 'special 1', length: 204, comedian_id: 10)
+Special.create(name: 'special 2', length: 307, comedian_id: 10)
+Special.create(name: 'special 3', length: 105, comedian_id: 10)
 
 Comedian.create(name: 'Jay Leno', age: 72, city: 'Brooklyn, New York')
-Special.create(name: 'special 1', length: 302, comedian_id: 10)
-Special.create(name: 'special 2', length: 206, comedian_id: 10)
-Special.create(name: 'special 3', length: 106, comedian_id: 10)
+Special.create(name: 'special 1', length: 302, comedian_id: 11)
+Special.create(name: 'special 2', length: 206, comedian_id: 11)
+Special.create(name: 'special 3', length: 106, comedian_id: 11)
 
 Comedian.create(name: 'Eugenio Derbez', age: 52, city: 'Mexico City, Mexico')
-Special.create(name: 'special 1', length: 302, comedian_id: 11)
-Special.create(name: 'special 2', length: 205, comedian_id: 11)
-Special.create(name: 'special 3', length: 301, comedian_id: 11)
+Special.create(name: 'special 1', length: 302, comedian_id: 12)
+Special.create(name: 'special 2', length: 205, comedian_id: 12)
+Special.create(name: 'special 3', length: 301, comedian_id: 12)
 
 
 

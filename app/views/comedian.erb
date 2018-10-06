@@ -8,10 +8,11 @@
       <li> Age: <%=comedian.age %></li>
       <li>City: <%= comedian.city %></li>
       <li>ID: <%= comedian.id %></li>
-      <li>Specials: <%= comedian.specials.each do |special|
-          special.name
-          special.length
-        end %> </li>
+      <li>Specials: <%comedian.specials.each do |special| %>
+        <!-- binding.pry -->
+          <%= special.name %>
+          <%= special.length %>
+        <% end %> </li>
       <br/>
 
   <% end %>
