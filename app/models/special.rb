@@ -10,7 +10,4 @@ class Special < ActiveRecord::Base
   def self.total_specials
     Special.count
   end
-
-
-
 end
