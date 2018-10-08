@@ -1,3 +1,5 @@
+require 'pry'
+
 RSpec.describe Comedian do
   describe 'Validations' do
     describe 'Required Field(s)' do
