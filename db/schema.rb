@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2018_10_04_200254) do
     t.integer "comedian_id"
     t.text "name"
     t.integer "length"
+    t.text "thumbnail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

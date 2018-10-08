@@ -1,6 +1,21 @@
 
 <h1> Welcome to Comedian Tracker </h1>
 
+  <section>
+    <h2> Statistics </h2>
+
+    <h4> Average TV Special Run Time</h4>
+    <p> <%= @specials.ave_run_time %> </p>
+
+    <h4> Total Tv Specials</h4>
+    <p> <%= @specials.total_specials %> </p>
+
+    <h4> Average Age</h4>
+    <p> <%= @comedians.ave_age %></p>
+
+    <h4>Cities</h4>
+    <p> <%= @comedians.all_cities %> </p>
+  </section>
 
 <ul>
   <% @comedians.each do |comedian| %>
@@ -8,9 +23,12 @@
       <li> Age: <%=comedian.age %></li>
       <li>City: <%= comedian.city %></li>
       <li>ID: <%= comedian.id %></li>
-      <li>Specials: <%comedian.specials.each do |special| %>
+      <li>
+          <%comedian.specials.each do |special| %> <br/>
+          <%=  %>
           <%= special.name %>
-          <%= special.length %>
+          length:<%= special.length %> min<br/>
+          <img src=" <%= special.thumbnail %> " alt="Comedy Special">
         <% end %> </li>
       <br/>
 
